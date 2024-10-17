@@ -1,0 +1,53 @@
+{
+  "name": "next-pc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "APP_ENV=development next dev",
+    "dev:test": "APP_ENV=test next dev",
+    "dev:prod": "APP_ENV=production next dev",
+    "build": "APP_ENV=production next build",
+    "build:test": "APP_ENV=test next build",
+    "start": "next start",
+    "lint": "eslint src --fix --ext .js,.jsx,.ts,.tsx",
+    "lint:prettier": "prettier -c --write \"src/**/*\"",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
+    "commitlint": "commitlint --config commitlint.config.js -e -V"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx,js,jsx,json}": [
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "ahooks": "^3.8.1",
+    "antd": "^5.21.4",
+    "axios": "^1.7.7",
+    "jotai": "^2.10.1",
+    "next": "14.2.15",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^8.9.0",
+    "@typescript-eslint/parser": "^8.9.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.15",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "sass": "^1.79.5",
+    "typescript": "^5"
+  }
+}
