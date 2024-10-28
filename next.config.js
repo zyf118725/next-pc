@@ -7,7 +7,8 @@ module.exports = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   env: {
-    APP_ENV: process.env.APP_ENV
+    APP_ENV: process.env.APP_ENV,
+    BASEURL: process.env.BASEURL,
   },
 };
 

@@ -1,21 +1,9 @@
 import axios from 'axios';
 
-// 配置baseURL
-const nodeEnv = process.env.APP_ENV;
-console.log('nodeEnv: ', nodeEnv);
-
-let baseUrl = '';
-if (nodeEnv === 'production') {
-  baseUrl = 'http://10.33.31.9:8100'; // 线上
-} else if (nodeEnv === 'test') {
-  baseUrl = 'http://10.33.31.19:8100'; // 测试
-} else {
-  baseUrl = 'http://a.itying.com'; // 开发
-  // baseUrl = '/api'; // 开发
-}
+const BASEURL = process.env.BASEURL;
 
 const instance = axios.create({
-  baseURL: baseUrl,
+  baseURL: BASEURL,
   timeout: 100000
 });
 

@@ -1,5 +1,5 @@
 'use client';
-import Layout from '@/componenets/Layout';
+import Layout from '@/components/Layout';
 import styles from "./page.module.scss";
 import { Button } from 'antd';
 

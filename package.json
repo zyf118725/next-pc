@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "APP_ENV=development next dev",
-    "dev:test": "APP_ENV=test next dev",
-    "dev:prod": "APP_ENV=production next dev",
-    "build": "APP_ENV=production next build",
-    "build:test": "APP_ENV=test next build",
+    "dev": "node server.js",
+    "dev:test": "NODE_ENV=test node server.js",
+    "dev:prod": "NODE_ENV=production node server.js",
+    "build": "NODE_ENV=production next build",
+    "build:test": "NODE_ENV=test next build",
     "start": "next start",
     "lint": "eslint src --fix --ext .js,.jsx,.ts,.tsx",
     "lint:prettier": "prettier -c --write \"src/**/*\"",
@@ -44,10 +44,17 @@
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-typescript": "^0.14.0",
+    "express": "^4.21.1",
+    "http-proxy-middleware": "^3.0.3",
     "husky": "^8.0.0",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "sass": "^1.79.5",
     "typescript": "^5"
-  }
+  },
+  "engines": {
+    "node": ">=20.11.0",
+    "pnpm": "8.15.4"
+  },
+  "packageManager": "pnpm@8.15.4"
 }

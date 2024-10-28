@@ -1,5 +1,5 @@
 "use client";
-import Layout from '@/componenets/Layout';
+import Layout from '@/components/Layout';
 import { Button } from 'antd';
 import { useEffect } from 'react';
 import { useAtom } from 'jotai';

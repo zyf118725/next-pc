@@ -1,6 +1,6 @@
 "use client";
-import Layout from '@/componenets/Layout';
-import { goodsList } from '@/api';
+import Layout from '@/components/Layout';
+import { goodsList } from '@/service';
 import { useEffect } from 'react';
 
 export default function Goods() {
