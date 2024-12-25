@@ -20,6 +20,6 @@ module.exports = {
     ],
     // subject 大小写不做校验
     // 自动部署的BUILD ROBOT的commit信息大写，以作区别
-    'subject-case': [0],
+    'subject-case': [0]
   },
 };

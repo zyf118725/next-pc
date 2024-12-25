@@ -4,4 +4,4 @@ node_modules/*
 .eslintrc.js
 .idea  
 README.md  
-.gitignore
+.gitignore 
